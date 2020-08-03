@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 11, 2019 11:15:57 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="in.co.hospital.mgt.sys.bean.PatientBean" table="H_PATIENT">
+       <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="firstName" type="java.lang.String" length="225">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="emailId" type="java.lang.String"  length="225">
+            <column name="EMAILID" />
+        </property>
+        <property name="lastName" type="java.lang.String"  length="225">
+            <column name="LASTNAME" />
+        </property>
+        <property name="dob" type="java.util.Date"  length="225">
+            <column name="DOB" />
+        </property>
+        <property name="mobileNo" type="java.lang.String"  length="225">
+            <column name="MOBILENO" />
+        </property>
+        <property name="gender" type="java.lang.String"  length="225">
+            <column name="GENDER" />
+        </property>
+        <property name="age" type="java.lang.String"  length="225">
+            <column name="AGE" />
+        </property>
+        <property name="bloodGroup" type="java.lang.String"  length="225">
+            <column name="BLOODGROUP" />
+        </property>
+        <property name="address" type="java.lang.String"  length="225">
+            <column name="ADDRESS" />
+        </property>
+        <property name="city" type="java.lang.String"  length="225">
+            <column name="CITY" />
+        </property>
+        <property name="CNIC" type="java.lang.String"  length="225">
+            <column name="CNIC" />
+        </property>
+        <property name="maritialStatus" type="java.lang.String"  length="225">
+            <column name="MARITIALSTATUS" />
+        </property>
+        <property name="joiningDate" type="java.util.Date"  length="225">
+            <column name="JOININGDATE" />
+        </property>
+        <property name="doctorName" type="java.lang.String"  length="225">
+            <column name="DOCTORNAME" />
+        </property>
+        <property name="deceased" type="java.lang.String"  length="225">
+            <column name="DECEASED" />
+        </property>
+         <property name="createdBy" type="java.lang.String" update="false" length="225">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedBy" type="java.lang.String" length="225">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createdDatetime" type="java.sql.Timestamp" update="false">
+            <column name="CREATEDDATETIME" />
+        </property>
+        <property name="modifiedDatetime" type="java.sql.Timestamp">
+            <column name="MODIFIEDDATETIME" />
+        </property>
+    </class>
+</hibernate-mapping>
